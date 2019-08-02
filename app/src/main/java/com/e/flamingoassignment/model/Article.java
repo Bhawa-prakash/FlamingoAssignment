@@ -4,6 +4,8 @@ package com.e.flamingoassignment.model;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+import io.realm.annotations.PrimaryKey;
+
 public class Article {
 
     @SerializedName("source")
@@ -11,6 +13,8 @@ public class Article {
     private Source source;
     @SerializedName("author")
     @Expose
+
+    @PrimaryKey
     private String author;
     @SerializedName("title")
     @Expose

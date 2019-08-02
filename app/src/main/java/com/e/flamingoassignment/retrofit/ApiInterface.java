@@ -12,8 +12,8 @@ import retrofit2.http.Query;
 
 public interface ApiInterface {
 
-    @GET("https://newsapi.org/v2/top-headlines?sources&apiKey")
-    Call<ModelResponse> getALLDetails(@Query("techcrunch") String techcrunch, @Query("f27d3df679f64c3385dbdb7dd7969f90") String key);
+    @GET("top-headlines")
+    Call<ModelResponse> getALLDetails(@Query("sources") String techcrunch, @Query("apiKey") String key);
 
 
 }
